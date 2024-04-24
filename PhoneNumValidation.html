@@ -1,0 +1,22 @@
+<html>
+  <head>
+  <script type="text/javascript">
+  function check()
+  {
+  var s1=document.f1.snum.value;
+  var s2=new RegExp("^\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d$");
+  if(s1.match(s2))
+  alert("VALID PHONE NUMBER");
+  else
+  alert("INVALID PHONE NUMBER");
+  }
+  </script>
+  </head>
+  <body>
+  <form name=f1>
+  <br>ENTER YOUR MOBILE NUMBER
+  <input type=number name=snum value="" size=30>
+  <br><input type=button value="Check" onclick="check()">
+  </form>
+  </body>
+</html>

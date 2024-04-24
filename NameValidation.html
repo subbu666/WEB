@@ -1,0 +1,22 @@
+<html>
+  <head>
+  <script type="text/javascript">
+  function check()
+  {
+  var s1=document.f1.sname.value;
+  var s2=new RegExp("^[a-zA-Z]+$");
+  if(s1.match(s2))
+  alert("VALID NAME");
+  else
+  alert("INVALID NAME");
+  }
+  </script>
+  </head>
+  <body>
+  <form name=f1>
+  <br>Enter your Name
+  <input type=text name=sname value="" size=30>
+  <br><input type=button value="Check" onclick="check()">
+  </form>
+  </body>
+</html>
